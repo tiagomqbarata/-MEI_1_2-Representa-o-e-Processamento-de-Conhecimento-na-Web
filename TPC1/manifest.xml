@@ -1,8 +1,8 @@
 <TPC1>
     <title> TPC1 </title>
-    <date> ... </date>
+    <date> 21/02/2021 </date>
     <author> Tiago Barata </author>
     <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> ... </summary>
-    <results> ... </results>
+    <summary> Criar uma página web relacionada com o Japão, com a complexidade ao gosto do aluno </summary>
+    <results> O resultado pode ser visto na página 'japao.html', que conta com um título da página, uma imagem da bandeira do japão, com hiperligação para a wikipédia, e informações sobre o país. </results>
 </TPC1>
