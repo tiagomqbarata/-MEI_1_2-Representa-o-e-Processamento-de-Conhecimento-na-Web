@@ -1,8 +1,24 @@
-<TPC1>
-    <title> Japão </title>
-    <date> 21/02/2021 </date>
-    <author> Tiago Barata </author>
-    <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> Criar uma página web relacionada com o Japão, com a complexidade ao gosto do aluno </summary>
-    <results> O resultado pode ser visto na página 'japao.html', que conta com um título da página, uma imagem da bandeira do japão, com hiperligação para a wikipédia, e informações sobre o país. </results>
-</TPC1>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title> TPC1: uma página web </title>
+        <date> 2022-02-15 </date>
+        <author> 
+            <id>PG47695</id>
+            <nome>Tiago Barata</nome>
+        </author>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo> 
+        <p>Primeiro parágrafo</p>
+        <p>Segundo parágrafo</p>
+        <p>Terceiro Parágrafo a apontar para o <xref><url>xml.com</url><texto>XML</texto></xref></p>
+    </resumo>
+    <resultados>
+        <resultado><url>japao.html</url><texto>Página WEB</texto></resultado>
+    </resultados>
+</doc>
