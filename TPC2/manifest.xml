@@ -1,8 +1,25 @@
-<TPC2>
-    <title> TPC2 </title>
-    <date> ... </date>
-    <author> Tiago Barata </author>
-    <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> ... </summary>
-    <results> ... </results>
-</TPC2>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title> TPC2: JSON to HTML </title>
+        <date> 2022-02-22 </date>
+        <author> 
+            <id>PG47695</id>
+            <nome>Tiago Barata</nome>
+        </author>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo> 
+        <p>O trabalho desta semana consistiu em analisar um ficheiro JSON, com informações sobre filmes e colocar a informação numa página WEB.</p>
+        <p>O trabalho foi todo feito em JS, fazendo o parsing do JSON, analisando por ordem alfabética, e seguida da criação das páginas HTML.</p>
+        <p>Por fim é executado um servidor que responde aos pedidos enviando a página HTML correspondente.</p>
+    </resumo>
+    <resultados>
+        <resultado><url>index.html</url><texto>Página WEB</texto></resultado>
+        <resultado><url>jsonParsing.js</url><texto>Paser e Servidor</texto></resultado>
+    </resultados>
+</doc>
