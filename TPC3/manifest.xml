@@ -1,8 +1,24 @@
-<TPC3>
-    <title> TPC3 </title>
-    <date> ... </date>
-    <author> Tiago Barata </author>
-    <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> ... </summary>
-    <results> ... </results>
-</TPC3>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title> TPC3: JSON-Server to WebServer </title>
+        <date> 2022-03-80 </date>
+        <author> 
+            <id>PG47695</id>
+            <nome>Tiago Barata</nome>
+        </author>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo> 
+        <p>O trabalho desta semana consistiu fazer pedidos a um JSON server, e formatar páginas HTML com as informações.</p>
+        <p>O trabalho foi feito em JS, onde o servidor responde aos pedidos, que são suportados('/', '/alunos', '/cursos' e 'instrumentos').</p>
+        <p>O ficheiro seguinte é o que é usado para o JSON-Server: <url>db.json</url><texto>Ficheiro JSON</texto></p>
+    </resumo>
+    <resultados>
+        <resultado><url>Servidor.js</url><texto>Servidor dinâmico</texto></resultado>
+    </resultados>
+</doc>

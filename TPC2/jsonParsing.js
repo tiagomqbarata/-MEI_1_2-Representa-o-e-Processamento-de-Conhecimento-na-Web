@@ -31,6 +31,8 @@ html = html + "\t</ul>\n</body>\n</html>"
 
 fs.writeFileSync("index.html", html)
 
+console.log("its done...")
+
 function escreveFilme(i, filme){
     var sfilmehtml = "<!doctype html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"utf-8\"></meta>\n\t<title>"
     var efilmehtml = "\n</body>\n</html>"
@@ -69,6 +71,7 @@ http.createServer(function(req, res) {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         var index = fs.readFileSync("./index.html")
         res.write(index)
+        res.end()
     
         console.log(req.method + " " + req.url + " " + d)
 
@@ -80,6 +83,7 @@ http.createServer(function(req, res) {
 
         res.writeHead(200, { 'Content-Type': 'text/html' })
         res.write(page)
+        res.end()
     }
     
 
