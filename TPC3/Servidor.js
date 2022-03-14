@@ -58,17 +58,17 @@ http.createServer(async (req, res) => {
     console.log(req.method + " " + req.url + " " + d)
     var myUrl = url.parse(req.url, true).pathname
     if(myUrl == '/'){
-        res.writeHead(200, {'Content-Type':'text/html'})
+        res.writeHead(200, {'Content-Type':'text/html;charset=utf-8'})
         content = generateMainPage()
         res.write(content)
         res.end()
     }else if(myUrl == "/alunos" || myUrl == "/cursos" || myUrl == "/instrumentos"){
-        res.writeHead(200, { 'Content-Type' : 'text/html' })
+        res.writeHead(200, { 'Content-Type' : 'text/html;charset=utf-8' })
         content = await getRequest(myUrl)
         res.write(content)
         res.end()
     }else{
-        res.writeHead(404, {'Content-Type':'text/html'})
+        res.writeHead(404, {'Content-Type':'text/html;charset=utf-8'})
         res.end()
     }
     
