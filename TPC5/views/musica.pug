@@ -1,0 +1,29 @@
+extends layout
+
+block content
+    h1 Musica #{musica.tit}
+    h2 22 de março de 2022
+    p
+        b Título: 
+        span= musica.tit
+    p
+        b Músico: 
+        span= musica.musico
+    p
+        b Ficheiro: 
+        span= musica.file
+    p
+        b Tipo de Ficheiro: 
+        span= musica.fileType
+    p
+        b Duração: 
+        span= musica.duracao
+    p 
+        b Província: 
+            a(href="/musicas/prov/" + musica.prov)= musica.prov
+    p
+        b Local: 
+        span= musica.local
+    hr
+    address 
+        a(href="/musicas") Voltar à lista 
