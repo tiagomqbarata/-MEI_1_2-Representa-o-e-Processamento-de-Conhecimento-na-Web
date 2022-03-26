@@ -1,8 +1,25 @@
-<TPC5>
-    <title> TPC5 </title>
-    <date> ... </date>
-    <author> Tiago Barata </author>
-    <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> ... </summary>
-    <results> ... </results>
-</TPC5>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title> TPC5: WebServer com Express e JsonServer </title>
+        <date> 2022-03-22 </date>
+        <author> 
+            <id>PG47695</id>
+            <nome>Tiago Barata</nome>
+        </author>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo> 
+        <p>O trabalho desta semana consistiu fazer pedidos a um JSON server (GET requests) e apresentar informações em páginas web.</p>
+        <p>O trabalho foi feito em JS, usando Express, com views pug. O servidor responde às rotas '/musicas', '/musicas/:titulo' e '/musicas/prov/:idProv'.</p>
+        <p>O ficheiro seguinte é o que é usado para o JSON-Server: <url>arq-son.json</url><texto>Ficheiro JSON</texto>. Este ficheiro teve um pré-processamento pois não estava num formato compatível com JSON-Server.</p>
+    </resumo>
+    <resultados>
+        <resultado><url>/views</url><texto>Views apresentadas ao utilizador</texto></resultado>
+        <resultado><url>/routes/index.js</url><texto>Rotas programadas para responder a pedidos</texto></resultado>
+    </resultados>
+</doc>
