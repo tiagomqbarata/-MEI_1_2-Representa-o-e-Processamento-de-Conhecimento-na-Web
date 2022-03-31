@@ -24,8 +24,6 @@ router.post('/submitFile',  upload.single('myFile'), (req, res) => {
       if(erro) throw erro
     })
 
-    var json = jsonfile.readFileSync('./index.json')
-
     var ficheiro = {
       data : d,
       _id : req.file.originalname,
@@ -35,10 +33,6 @@ router.post('/submitFile',  upload.single('myFile'), (req, res) => {
     }
 
     console.log(req.body.descricao);
-
-    json.numero ++
-
-    jsonfile.writeFileSync('./index.json', json)
 
     Ficheiro.insert(ficheiro)
       .then(() => res.redirect('/'))
