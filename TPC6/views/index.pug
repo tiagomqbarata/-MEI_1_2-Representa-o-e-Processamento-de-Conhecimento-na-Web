@@ -33,13 +33,12 @@ block content
                 each f in list
                     tr
                         td= f.data
-                        td= f._id 
+                        td= f._id
                         td= f.mimetype 
                         td= f.size
                         td= f.descricao
                         td 
                             form.w3-container(class='w3-container' method='POST' action='/deleteFile/' + f._id)
-            
                                 button.w3-btn.w3-red.w3-round-large.w3-right
                                     input.w3-input.w3-red(type="submit" value = 'X')
 

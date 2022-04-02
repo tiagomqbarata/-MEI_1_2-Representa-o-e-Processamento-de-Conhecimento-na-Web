@@ -1,8 +1,29 @@
-<TPC6>
-    <title> TPC6 </title>
-    <date> ... </date>
-    <author> Tiago Barata </author>
-    <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> ... </summary>
-    <results> ... </results>
-</TPC6>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title> TPC6: Gestor de ficheiros com Express e MongoDB </title>
+        <date> 2022-03-29 </date>
+        <author> 
+            <id>PG47695</id>
+            <nome>Tiago Barata</nome>
+        </author>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo> 
+        <p>Esta semana o trabalho consistia em fazer um gestor de ficheiros, em que era possível dar o upload de ficheiros e guardar os ficheiros e as suas informações em base de dados</p>
+        <p>Para implementar a base de dados foi utilizado o MongoDB, em que se guarda um objeto com data, nome, tamanho, mimetype e descrição do mesmo.</p>
+        <p>Posteriormente, o utilizador pode consultar os ficheiros guardados através da mesma págia de onde faz a submissão, e ainda remover os ficheiros através de um botão disponível em cada linha.</p>
+        <p>Por fim, tentei fazer a validação do ficheiro da base de dados ao inserir, mas não funcionou. Deste modo, se o utilizador utilizar o mesmo nome de ficheiro, haverá um erro.</p>
+    </resumo>
+    <resultados>
+        <resultado><url>/views/index.pug</url><texto>View da págia apresentada ao utilizador</texto></resultado>
+        <resultado><url>/routes/index.js</url><texto>Rotas programadas para responder a pedidos</texto></resultado>
+        <resultado><url>/models/ficheiro.js</url><texto>Schema da base de dados, onde é colocado o que vai conter cada objeto guardado.</texto></resultado>
+        <resultado><url>/controllers/ficheiro.js</url><texto>Funções para ligar com a base de dados, que neste TPC vão desde consultas, inserções e remoções</texto></resultado>
+        <resultado><url>/uploads/</url><texto>Pasta onde são guardados os ficheiros que o utilizador deu upload.</texto></resultado>
+    </resultados>
+</doc>

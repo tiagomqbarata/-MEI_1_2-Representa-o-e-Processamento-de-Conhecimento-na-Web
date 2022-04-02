@@ -22,3 +22,9 @@ module.exports.remove = id => {
         .deleteOne()
         .exec()
 }
+
+module.exports.getById = id => {
+    return Ficheiro
+        .findOne({__id : id})
+        .exec()
+}
