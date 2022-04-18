@@ -1,8 +1,24 @@
-<TPC7>
-    <title> TPC7 </title>
-    <date> ... </date>
-    <author> Tiago Barata </author>
-    <uc> Representação e Processamento de Conhecimento na Web </uc>
-    <summary> ... </summary>
-    <results> ... </results>
-</TPC7>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<doc>
+    <meta>
+        <title> TPC7: CLAV </title>
+        <date> 2022-04-05 </date>
+        <author> 
+            <id>PG47695</id>
+            <nome>Tiago Barata</nome>
+        </author>
+        <uc> 
+            <sigla>RPCW2022</sigla>
+            <nome>Representação e Processamento de Conhecimento na Web</nome>
+        </uc>
+    </meta>
+    <resumo> 
+        <p>O trabalho desta semana consistiu em ir buscar informações a uma API de dados (CLAV) e dispô-las num site, ordenadas pelas suas classes</p>
+    </resumo>
+    <resultados>
+        <resultado><url>/views/index.pug</url><texto>View da página apresentada ao utilizador com as classes</texto></resultado>
+        <resultado><url>/views/classe.pug</url><texto>View da página apresentada ao utilizador com a informação de cada classe</texto></resultado>
+        <resultado><url>/routes/index.js</url><texto>Gestão das páginas e dos pedidos à aplicação</texto></resultado>
+    </resultados>
+</doc>
