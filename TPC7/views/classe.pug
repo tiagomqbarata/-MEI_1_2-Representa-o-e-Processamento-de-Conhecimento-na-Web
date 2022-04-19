@@ -14,54 +14,55 @@ block content
 
   if Object.keys(classe.pai).length > 0 
     p
-      b Pai:
+      b Pai: 
       span= classe.pai.titulo
       
 
   if Object.keys(classe.filhos).length > 0 
-    p 
+    h4 
       b Filhos: 
-    ul
-      - var i = 1
+    ol
       each filho in classe.filhos 
         li 
-          b Filho #{i}
-          - i=i+1
-          p Título: #{filho.titulo}
-          p Código: 
+          p 
+            b Título: 
+            span= filho.titulo
+          p 
+            b Código: 
             a(href="/" + filho.codigo)= filho.codigo
-          p Estado: #{filho.status}
+          p 
+            b Estado: 
+            span= filho.status
 
   if classe.nivel == "3"
     if Object.keys(classe.processosRelacionados).length > 0 
-      h4 Processos Relacionados:
-      ul
-        - var i = 1 
+      h4 
+        b Processos Relacionados: 
+      ol
         each relacao in classe.processosRelacionados
           if (relacao.idRel == "eComplementarDe" || relacao.idRel == "eCruzadoCom" ||relacao.idRel == "eSuplementoDe" ||relacao.idRel =="eSuplementoPara")
             li 
-              b Processo #{i}
               if (relacao.idRel == "eComplementarDe")
-                p 
-                  b Relação: 
-                  span Processo Complementar 
+                b 
+                  i Processo Complementar 
               else if (relacao.idRel == "eCruzadoCom") 
-                p 
-                  b Relação: 
-                  span Processo cruzado
+                b 
+                  i Processo cruzado
               else if (relacao.idRel == "eSuplementoDe")
-                p 
-                  b Relação: 
-                  span Processo suplementar de 
+                b 
+                  i Processo suplementar de 
               else if (relacao.idRel == "eSuplementoPara")
-                p 
-                  b Relação: 
-                  span Processo suplementar para
-              - i=i+1
-              p Título: #{relacao.titulo}
-              p Código: 
+                b 
+                  i Processo suplementar para
+              p 
+                b Título: 
+                span= relacao.titulo
+              p 
+                b Código: 
                 a(href= "/" + relacao.codigo)= relacao.codigo
-              p Estado: #{relacao.status}
+              p 
+                b Estado: 
+                span= relacao.status
                         
   p 
     a(href= "/" + classe.pai.codigo) Voltar à Página Anterior 
